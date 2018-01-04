@@ -14,7 +14,7 @@ The follow along labs will use Docker for the Android Examples.
 Docker for Linux (Ubuntu) 
  ```sudo apt-get install docker```
 
- [Source for the ope bits of Docker. (You don't need this, this just for information purposes)](https://github.com/moby/moby)
+ [Source for the open bits of Docker. (You don't need this, this just for information purposes)](https://github.com/moby/moby)
 
  ## Slides (Reveal JS)
  launching the sides locally:
@@ -49,4 +49,4 @@ My_IP_Address will be determined at the time of the talk.
   ```docker run -it --rm -p 8888:8888 coreml-converter```
   You will need a mac to run the converted model.
   If you do have Mac then also run ```open digitrecognize.xcproj```
-  
+
