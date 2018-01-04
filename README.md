@@ -9,8 +9,8 @@ The follow along labs will use Docker for the Android Examples.
 
 ## Getting Docker
 #### Please have Docker installed before the talk
- [Docker for Windows 10](https://store.docker.com/editions/community/docker-ce-desktop-window)
-[Docker for MacOS](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+ [Docker for Windows 10](https://store.docker.com/editions/community/docker-ce-desktop-window)   
+[Docker for MacOS](https://store.docker.com/editions/community/docker-ce-desktop-mac)   
 Docker for Linux (Ubuntu) 
  ```sudo apt-get install docker```
 
