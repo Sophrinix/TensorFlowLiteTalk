@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="css/images/Tensorflow_logo.png">
+					<h2>Getting Started With TensorFlow lite:</h2>
+					<h5>or how/why you should run TensorFlow models on iOS ( /w CoreML) and Android (tflite)</h5>
+					<p>
+						<small>Presented by <a href="http://github.com/sophrinix">Andrew McElroy</a> </small>
+					</p>
+				</section>
+				<section>
+					Audience guage Who has heard of Tensorflow?
+					Knows what Deep Learning is?
+					Mobile Developer? iOS, Android, ReactNative, Other Mobile JS Native devs?
+				</section>
+				<section>
+					<h4>Goals of this talk:</h4>
+					<UL>
+						<li>
+							Change how you approach a ML Pipeline across cloud and device. Devices are powerful now.
+						</li>
+						<br>
+						<li>
+							Actually get you started with a full dev environment using Docker containers
+						</li>
+					</UL>
+				</section>
+				<section>
+					<h5>
+						Seriously, devices are fast now
+						<img src="css/images/geekbench-benchmark.png" />
+
+						<a href="https://9to5mac.com/2017/06/14/ipad-pro-versus-macbook-pro-speed-tests/#jp-carousel-487511">source: 9to5mac</a>
+					</h5>
+				</section>
+				<section>
+					<h5>
+						Seriously, devices are fast now (even by desktop standards)
+						<img src="css/images/tnw-benchmark.png" />
+
+						<a href="https://thenextweb.com/apple/2017/09/12/apples-new-iphone-x-already-destroying-android-devices-g/">source: tnw, geekbench</a>
+					</h5>
+				</section>
+				<section>
+					Background on what Tensorflow is....
+				</section>
+				<section>
+					Popularity of various ML Frameworks
+					<img src="css/images/tensorflow-popularity.png" />
+					<img src="css/images/leaf-popularity.png" />
+					<img src="css/images/theano-popularity.png" />
+					<img src="css/images/caffe-popularity.png" />
+					<img src="css/images/keras-popularity.png" />
+
+				</section>
+				<section>
+					Quick explanation of TF lite 
+					<img src="css/images/tflite-architecture.jpg" height="500px" />
+					<br>
+					<a href="https://www.tensorflow.org/mobile/tflite/">source: tensorflow.org</a>
+				</section>
+				<section>
+					<p>On iOS, we would use CoreML (we'll see how later)</p>
+						<img src="css/images/coreml.png" height="100px"/>
+						<img src="css/images/coreml-arch.png"/>
+						<br>
+						<a href="https://developer.apple.com/documentation/coreml#overview">Core ML (iOS Documentation)</a>
+				</section>
+				<section>
+					FlatBuffers vs Protocol Buffers
+				</section>
+				<section>
+					Cool things you can do with TensorFlow ...
+					<a href="https://github.com/jtoy/awesome-tensorflow">Awesome TensorFlow list</a>
+				</section>
+				<section>
+						<p>Hopefully You have Docker setup?</p>
+						<img src="css/images/dockerhero.png"/>
+						<p> Let's do so now if you don't.</p>
+					</section>
+				<section>
+					<h5>Labs</h5>
+				</section>
+				
+				<section>
+					<h3>Random useful links</h3>
+					<a href="https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A"> Siraj Raval (youtube)</a>
+					<a href="https://github.com/cysmith/neural-style-tf">cysmith/neural-style-tf</a>
+					<a href="https://github.com/adl1995/TopDeepLearning">https://github.com/adl1995/TopDeepLearning</a>
+					<a href="https://github.com/tensorflow/tensorflow">TensorFlow Canonical Repo</a>
+					<a href="https://github.com/jtoy/awesome-tensorflow">Awesome Tensorflow</a>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
